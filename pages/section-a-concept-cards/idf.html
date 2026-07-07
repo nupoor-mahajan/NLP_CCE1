@@ -91,7 +91,24 @@
         <p>Some words appear frequently in almost every document (like "product" in a set of product reviews) but do not help distinguish one document's topic from another. IDF reduces the weight of such common words while boosting rarer, more distinguishing ones.</p>
 
         <div class="subsection-label"><span class="num">3</span> Working Principle</div>
-        <p>IDF for a word w is typically calculated as: IDF(w) = log(total number of documents / number of documents containing w). Words appearing in nearly every document get an IDF close to zero; rare words get a much higher IDF.</p>
+        <p>IDF for a word <i>w</i> is typically calculated as:</p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" style="display:block; margin: 0.75rem 0 1rem; font-size: 1.05rem;">
+          <mrow>
+            <mi>IDF</mi>
+            <mo>(</mo>
+            <mi>w</mi>
+            <mo>)</mo>
+            <mo>=</mo>
+            <mi>log</mi>
+            <mo>(</mo>
+            <mfrac>
+              <mtext>total number of documents</mtext>
+              <mtext>number of documents containing w</mtext>
+            </mfrac>
+            <mo>)</mo>
+          </mrow>
+        </math>
+        <p>Words appearing in nearly every document get an IDF close to zero; rare words get a much higher IDF.</p>
 
         <div class="subsection-label"><span class="num">4</span> Example</div>
         <div class="callout example">

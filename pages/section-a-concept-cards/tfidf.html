@@ -91,7 +91,32 @@
         <p>TF-IDF solves the main weakness of plain Bag of Words: it stops common, unhelpful words from dominating the feature space, while giving higher importance to words that are frequent in a specific document but rare elsewhere.</p>
 
         <div class="subsection-label"><span class="num">3</span> Working Principle</div>
-        <p>For every word in every document, TF-IDF is calculated as: TF-IDF(w, d) = TF(w, d) × IDF(w). A word gets a high TF-IDF score only if it appears often in a particular document AND is relatively rare across the whole collection.</p>
+        <p>For every word in every document, TF-IDF is calculated as:</p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" style="display:block; margin: 0.75rem 0 1rem; font-size: 1.05rem;">
+          <mrow>
+            <mi>TF</mi>
+            <mo>-</mo>
+            <mi>IDF</mi>
+            <mo>(</mo>
+            <mi>w</mi>
+            <mo>,</mo>
+            <mi>d</mi>
+            <mo>)</mo>
+            <mo>=</mo>
+            <mi>TF</mi>
+            <mo>(</mo>
+            <mi>w</mi>
+            <mo>,</mo>
+            <mi>d</mi>
+            <mo>)</mo>
+            <mo>&#xD7;</mo>
+            <mi>IDF</mi>
+            <mo>(</mo>
+            <mi>w</mi>
+            <mo>)</mo>
+          </mrow>
+        </math>
+        <p>A word gets a high TF-IDF score only if it appears often in a particular document AND is relatively rare across the whole collection.</p>
 
         <div class="subsection-label"><span class="num">4</span> Example</div>
         <div class="callout example">
